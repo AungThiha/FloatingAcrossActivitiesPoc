@@ -7,32 +7,50 @@
     android:padding="40dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/startService"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/start_service"
-        app:layout_constraintBottom_toTopOf="@id/startActivityA"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <Button
-        android:id="@+id/startActivityA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/activity_a"
-        app:layout_constraintBottom_toTopOf="@id/startActivityB"
-        app:layout_constraintTop_toBottomOf="@id/startService" />
-
-    <Button
-        android:id="@+id/startActivityB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/activity_b"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/startActivityA" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/startService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/start_service" />
+
+        <Button
+            android:id="@+id/showSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/show_small" />
+
+        <Button
+            android:id="@+id/showBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/show_big" />
+
+        <Button
+            android:id="@+id/startActivityA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/activity_a" />
+
+        <Button
+            android:id="@+id/startActivityB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/activity_b" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
