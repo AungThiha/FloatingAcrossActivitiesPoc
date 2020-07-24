@@ -1,5 +1,6 @@
 package thiha.aung.foatingacrossactivitiespoc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -17,10 +18,10 @@ class MainActivity : AppCompatActivity() {
       // TODO start the floating service
     }
     startActivityA.setOnClickListener {
-
+      startActivity(Intent(this, AActivity::class.java))
     }
     startActivityB.setOnClickListener {
-
+      startActivity(Intent(this, BActivity::class.java))
     }
   }
 
