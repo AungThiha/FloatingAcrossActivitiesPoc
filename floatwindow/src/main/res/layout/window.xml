@@ -24,13 +24,6 @@
             android:background="@color/windowFoucsColor"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/menu"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_weight="0"
-                android:background="@drawable/menu_icom" />
-
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
@@ -43,6 +36,7 @@
                 android:marqueeRepeatLimit="-1"
                 style="@style/WindiowTitleText"
                 android:singleLine="true" />
+
         </LinearLayout>
 
         <LinearLayout
