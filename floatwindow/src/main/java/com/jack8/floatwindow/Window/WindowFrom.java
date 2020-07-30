@@ -43,16 +43,14 @@ public class WindowFrom extends LinearLayout {
     public WindowKeyEvent getWindowKeyEvent(){
         return windowKeyEvent;
     }
-    View titleBar,sizeBar,microMaxButtonBackground,closeButtonBackground;
+    View titleBar, microMaxButtonBackground,closeButtonBackground;
     WindowColor wColor;
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         super.onLayout(changed,l,t,r,b);
         titleBar = this.findViewById(R.id.title_bar);
-        sizeBar = this.findViewById(R.id.size);
         microMaxButtonBackground = this.findViewById(R.id.micro_max_button_background);
         closeButtonBackground = this.findViewById(R.id.close_button_background);
-        findViewById(R.id.menu_list_and_context).setBackgroundColor(wColor.getWindowBackground());
 
         if(!inited){
             inited = true;
@@ -82,7 +80,6 @@ public class WindowFrom extends LinearLayout {
         if(!inited)
             return;
         titleBar.setBackgroundColor(wColor.getTitleBar());
-        sizeBar.setBackgroundColor(wColor.getSizeBar());
         microMaxButtonBackground.setBackgroundColor(wColor.getMicroMaxButtonBackground());
         closeButtonBackground.setBackgroundColor(wColor.getCloseButtonBackground());
     }
@@ -90,7 +87,6 @@ public class WindowFrom extends LinearLayout {
         if(!inited)
             return;
         titleBar.setBackgroundColor(wColor.getWindowNotFoucs());
-        sizeBar.setBackgroundColor(wColor.getWindowNotFoucs());
         microMaxButtonBackground.setBackgroundColor(wColor.getWindowNotFoucs());
         closeButtonBackground.setBackgroundColor(wColor.getWindowNotFoucs());
     }
